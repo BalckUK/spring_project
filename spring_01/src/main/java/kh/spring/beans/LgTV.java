@@ -7,6 +7,7 @@ public class LgTV implements Tv {
 
 	private Speaker speaker;
 	
+	
 	public LgTV(Speaker speaker) {
 		System.out.println("LG TV 생성!");
 		this.speaker = speaker;
