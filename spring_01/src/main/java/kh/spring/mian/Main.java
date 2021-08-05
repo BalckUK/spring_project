@@ -11,7 +11,7 @@ public class Main {
 		AbstractApplicationContext ctx = new GenericXmlApplicationContext("context.xml");
 		
 		Tv tv = (Tv) ctx.getBean("tv"); // Dependency Lookup : DL / DI
-		tv.powerOn();
+		tv.printPrice();
 
 		ctx.close();
 	}

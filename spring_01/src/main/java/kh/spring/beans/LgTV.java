@@ -6,11 +6,12 @@ import kh.spring.interfaces.Tv;
 public class LgTV implements Tv {
 
 	private Speaker speaker;
-	
-	
-	public LgTV(Speaker speaker) {
+	private int price;
+
+	public LgTV(Speaker speaker, int price) {
 		System.out.println("LG TV 생성!");
 		this.speaker = speaker;
+		this.price = price;
 	}
 
 	public void powerOn() {
@@ -27,5 +28,10 @@ public class LgTV implements Tv {
 
 	public void destory() {
 		System.out.println("LG TV 고장");
+	}
+
+	@Override
+	public void printPrice() {
+		System.out.println("LG TV : "+ price);
 	}
 }

@@ -3,18 +3,21 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="tv" class="kh.spring.beans.LgTV" init-method="init"
-		destroy-method="destory" lazy-init="true" scope="singleton">
-		<constructor-arg ref="Britz"></constructor-arg>
+<!-- init-method="init"
+		destroy-method="destory" lazy-init="true" scope="singleton" -->
+
+	<bean id="tv" class="kh.spring.beans.LgTV">
+		<constructor-arg ref="Britz"/>
+		<constructor-arg value="1000000"/>
 	</bean>
 
 	<bean id="Britz" class="kh.spring.beans.BritzSpeaker">
 
 	</bean>
 	
-	<bean id="Sony" class="kh.spring.beans.SonySpeaker">
+	<!--  <bean id="Sony" class="kh.spring.beans.SonySpeaker">
 
-	</bean>
+	</bean>-->
 
 	<!-- IOC : (Inversion of Control : 제어의 역전) -->
 	<!-- DI  : (Dependency Injection : 의존성 주입) -->
