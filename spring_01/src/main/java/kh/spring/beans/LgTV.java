@@ -8,6 +8,8 @@ public class LgTV implements Tv {
 	private Speaker speaker;
 	private int price;
 
+	
+
 	public LgTV(Speaker speaker, int price) {
 		System.out.println("LG TV 생성!");
 		this.speaker = speaker;
@@ -32,6 +34,6 @@ public class LgTV implements Tv {
 
 	@Override
 	public void printPrice() {
-		System.out.println("LG TV : "+ price);
+		System.out.println("LG TV : " + price);
 	}
 }
