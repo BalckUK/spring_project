@@ -8,12 +8,30 @@ public class LgTV implements Tv {
 	private Speaker speaker;
 	private int price;
 
-	
+	public LgTV() {
+
+	}
 
 	public LgTV(Speaker speaker, int price) {
 		System.out.println("LG TV 생성!");
 		this.speaker = speaker;
 		this.price = price;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public Speaker getSpeaker() {
+		return speaker;
+	}
+
+	public void setSpeaker(Speaker speaker) {
+		this.speaker = speaker;
 	}
 
 	public void powerOn() {
