@@ -9,7 +9,8 @@ public class Main {
 	public static void main(String[] args) {
 
 		AbstractApplicationContext ctx = new GenericXmlApplicationContext("context.xml");
-		Tv tv = (Tv) ctx.getBean("tv");
+		
+		Tv tv = (Tv) ctx.getBean("tv"); // Dependency Lookup : DL / DI
 		tv.powerOn();
 
 		ctx.close();

@@ -14,4 +14,12 @@ public class LgTV implements Tv {
 	public void powerOff() {
 		System.out.println("TV 꺼짐");
 	}
+	
+	public void init() {
+		System.out.println("LG TV 초기 설정 가동");
+	}
+	
+	public void destory() {
+		System.out.println("LG TV 고장");
+	}
 }
