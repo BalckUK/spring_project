@@ -1,15 +1,17 @@
 package kh.spring.mian;
 
-import kh.spring.factory.TvFactory;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
 import kh.spring.interfaces.Tv;
 
 public class Main {
 	public static void main(String[] args) {
-		// SamsungTV tv = new SamsungTV();
-		// LgTV tv = new LgTV();
-		// Tv tv = new SamsungTV();
-		// Tv tv = TvFactory.getInstance("Samsung");
-		Tv tv = TvFactory.getInstance(args[0]);
+
+		AbstractApplicationContext ctx = new GenericXmlApplicationContext("context.xml");
+		Tv tv = (Tv) ctx.getBean("tv");
 		tv.powerOn();
+
+		ctx.close();
 	}
 }
