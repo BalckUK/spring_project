@@ -1,6 +1,8 @@
 package kh.spring.beans;
 
-public class SamsungTV {
+import kh.spring.interfaces.Tv;
+
+public class SamsungTV implements Tv {
 	public SamsungTV() {
 		System.out.println("삼성 TV 생성!");
 	}

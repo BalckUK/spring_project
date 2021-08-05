@@ -1,6 +1,8 @@
 package kh.spring.beans;
 
-public class LgTV {
+import kh.spring.interfaces.Tv;
+
+public class LgTV implements Tv {
 	public LgTV() {
 		System.out.println("LG TV 생성!");
 	}
