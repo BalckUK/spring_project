@@ -10,12 +10,8 @@ public class Main {
 
 		AbstractApplicationContext ctx = new GenericXmlApplicationContext("context.xml");
 		
-		
-		
-		
-		  Tv tv = (Tv) ctx.getBean(Tv.class); // Dependency Lookup : DL / DI
-		 /* tv.printPrice();
-		 */
+		Tv tv = (Tv) ctx.getBean("tv"); // Dependency Lookup : DL / DI
+		tv.printPrice();
 
 		ctx.close();
 	}

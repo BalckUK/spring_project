@@ -1,18 +1,15 @@
 package kh.spring.beans;
 
-import org.springframework.stereotype.Component;
-
 import kh.spring.interfaces.Speaker;
 import kh.spring.interfaces.Tv;
 
-@Component
 public class LgTV implements Tv {
 
 	private Speaker speaker;
 	private int price;
 
 	public LgTV() {
-		System.out.println("LG TV 기본생성");
+
 	}
 
 	public LgTV(Speaker speaker, int price) {
