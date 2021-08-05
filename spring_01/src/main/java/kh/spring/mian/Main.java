@@ -8,7 +8,8 @@ public class Main {
 		// SamsungTV tv = new SamsungTV();
 		// LgTV tv = new LgTV();
 		// Tv tv = new SamsungTV();
-		Tv tv = TvFactory.getInstance("Samsung");
+		// Tv tv = TvFactory.getInstance("Samsung");
+		Tv tv = TvFactory.getInstance(args[0]);
 		tv.powerOn();
 	}
 }
