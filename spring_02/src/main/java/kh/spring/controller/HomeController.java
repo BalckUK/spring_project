@@ -14,8 +14,12 @@ public class HomeController {
 
 	@RequestMapping("/")
 	public String home() {
-		
 		return "home";
+	}
+	
+	@RequestMapping(value = "/page1", method =  RequestMethod.POST)
+	public String toPage1() {
+		return "page1";
 	}
 
 }
