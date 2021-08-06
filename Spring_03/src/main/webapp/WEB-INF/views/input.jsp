@@ -9,8 +9,6 @@
 	crossorigin="anonymous"></script>
 <title>Insert title here</title>
 </head>
-<body>
-	<a href="input">toInput</a>
-	<a href="output">toOutput</a>
+<body>input 입니다
 </body>
 </html>
