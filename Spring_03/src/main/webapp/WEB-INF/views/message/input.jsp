@@ -9,6 +9,11 @@
 	crossorigin="anonymous"></script>
 <title>Insert title here</title>
 </head>
-<body>input 입니다
+<body>
+	<form action="inputProc" method="post">
+		<input type="text" name="writer"> 
+		<input type="text" name="message">
+		<button>저장</button>
+	</form>
 </body>
 </html>
