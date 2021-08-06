@@ -1,5 +1,7 @@
 package kh.spring.beans;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import kh.spring.interfaces.Speaker;
@@ -8,9 +10,15 @@ import kh.spring.interfaces.Tv;
 @Component
 public class LgTV implements Tv {
 
+	@Autowired
+	@Qualifier("Britz")
 	private Speaker speaker;
 	private int price;
 
+	public void volumUP() {
+		this.speaker.volumeUP();
+	}
+	
 	public LgTV() {
 		System.out.println("LG TV 기본생성");
 	}
