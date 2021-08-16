@@ -5,6 +5,17 @@ public class MessagesDTO {
 	private String writer;
 	private String message;
 
+	public MessagesDTO() {
+
+	}
+
+	public MessagesDTO(int seq, String writer, String message) {
+		super();
+		this.seq = seq;
+		this.writer = writer;
+		this.message = message;
+	}
+
 	public int getSeq() {
 		return seq;
 	}
