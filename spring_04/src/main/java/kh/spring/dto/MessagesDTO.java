@@ -1,9 +1,12 @@
 package kh.spring.dto;
 
+import java.sql.Timestamp;
+
 public class MessagesDTO {
 	private int seq;
 	private String writer;
 	private String message;
+	private Timestamp write_date;
 
 	public MessagesDTO() {
 
@@ -38,6 +41,14 @@ public class MessagesDTO {
 
 	public void setMessage(String message) {
 		this.message = message;
+	}
+
+	public Timestamp getWrite_date() {
+		return write_date;
+	}
+
+	public void setWrite_date(Timestamp write_date) {
+		this.write_date = write_date;
 	}
 
 }

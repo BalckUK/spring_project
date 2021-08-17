@@ -12,5 +12,6 @@
 <body>
 	<a href="input">toInput</a>
 	<a href="output">toOutput</a>
+	<a href="test">totest</a>
 </body>
 </html>

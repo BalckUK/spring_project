@@ -9,7 +9,7 @@
 </head>
 <body>
 	<c:forEach var="i" items="${list}">
-		${i.seq} : ${i.writer} : ${i.message}<br>
+		${i.seq} : ${i.writer} : ${i.message} : ${i.nowday}<br>
 	</c:forEach>
 	<form action="del" method="get">
 		<input type="text" placeholder="삭제하고 싶은 번호를 적으세요" name="seq"> <input

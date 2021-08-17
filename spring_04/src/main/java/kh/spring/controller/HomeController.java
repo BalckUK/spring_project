@@ -62,10 +62,4 @@ public class HomeController {
 		return "redirect:/";
 	}*/
 
-	@ExceptionHandler
-	public String exceptionHandler(Exception e) {
-		System.out.println("에러가 발생했습니다");
-		return "error";
-	}
-
 }

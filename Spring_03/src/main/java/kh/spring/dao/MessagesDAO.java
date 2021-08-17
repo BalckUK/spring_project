@@ -36,9 +36,7 @@ public class MessagesDAO {
 	
 	public List<MessagesDTO> selectAll() throws Exception {
 		String sql = "select * from messages";
-		try (Connection con = this.getConnection();
-				PreparedStatement patmt = con.prepareStatement(sql);
-				ResultSet re = patmt.executeQuery();) {
+		try (Connection con = this.getConnection();PreparedStatement patmt = con.prepareStatement(sql);ResultSet re = patmt.executeQuery();) {
 			List<MessagesDTO> list = new ArrayList<>();
 			while (re.next()) {
 				MessagesDTO dto = new MessagesDTO(re.getInt("seq"), re.getString("writer"), re.getString("message"));
